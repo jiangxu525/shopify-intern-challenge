@@ -1,0 +1,7 @@
+{
+	"list":[
+		{"name":"admin","password":"admin"},
+		{"name":"blue","password":"blue"},
+		{"name":"other","password":"other"}
+	]
+}
