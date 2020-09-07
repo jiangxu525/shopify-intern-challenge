@@ -10,18 +10,18 @@ import org.apache.commons.io.FileUtils;
 
 public class FileHandlerUtil {
 	/**
-	 * 上传单个文件
+	 * upload singe file
 	 *
-	 * @param inputStream 文件流
-	 * @param path        文件路径，如：image/
-	 * @param filename    文件名，如：test.jpg
-	 * @return 成功：上传后的文件访问路径，失败返回：null
+	 * @param inputStream file input stream
+	 * @param path        file path like image/
+	 * @param filename    file name like test.jpg
+	 * @return returns the file path if the upload is completed，otherwise returns null
 	 * @throws Exception 
 	 */
 	public static String upload(InputStream inputStream, String path, String filename) throws Exception {
-		//创建文件夹
+		//create folder
 		createDirIfNotExists(path);
-		//存文件
+		//save files
 		File uploadFile = new File(path, filename);
 		try {
 			FileUtils.copyInputStreamToFile(inputStream, uploadFile);
@@ -32,7 +32,7 @@ public class FileHandlerUtil {
 	}
 	
 	/**
-	 * 创建文件夹路径
+	 * create file path
 	 */
 	private static void createDirIfNotExists(String path) {
 		File file = new File(path);
@@ -42,10 +42,10 @@ public class FileHandlerUtil {
 	}
 	
 	/**
-	 * 删除文件
+	 * delete a file
 	 *
-	 * @param path 文件访问的路径upload开始 如： /upload/image/test.jpg
-	 * @return true 删除成功； false 删除失败
+	 * @param path file path like /upload/image/test.jpg
+	 * @return successfully deleting returns true, otherwise returns false
 	 */
 	public static boolean delete(String path) {
 		File file = new File(path);
@@ -53,7 +53,7 @@ public class FileHandlerUtil {
 	}
 	
 	/**
-	 * 获取服务部署根路径 http:// + ip + port
+	 * get the root file directory like http:// + ip + port
 	 *
 	 * @param request
 	 * @return

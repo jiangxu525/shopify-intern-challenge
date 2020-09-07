@@ -124,7 +124,7 @@ public class FileController {
 	
 	/**
 	 * Authenticate by username, return Failed 
-	 * if username is not "public" and does NOT exsist in userlist.json
+	 * if username is not "public" or does NOT exist in userlist.json
 	 * @param request
 	 * @param username
 	 * @param files
