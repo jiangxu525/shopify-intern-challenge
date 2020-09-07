@@ -1,3 +1,6 @@
+This is the Shopify intern challenge (a small image repository project), and I tried to use as many technologies as I’ve learned to demo my understanding about front-end and back-end software development. The project is created based on Spring Boot Web project, a Bootstrap template is used, a Vue component is included, and a JSON file is used as virtual database.
+
+
 Winter 2021 - Shopify Backend Intern
 Developer Intern Challenge Question
 
