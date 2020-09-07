@@ -1,4 +1,4 @@
-Fall 2020 - Shopify
+Winter 2021 - Shopify Backend Intern
 Developer Intern Challenge Question
 
 You can save your work in a text file, link, etc. and have it ready with you for your technical interview (you can also add it on GitHub). 
